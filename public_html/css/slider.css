@@ -1,0 +1,113 @@
+.directionNav a.prevNav {
+
+  
+    left: 10%;
+	right: initial;
+    
+}
+
+.directionNav a{
+	bottom: 0;
+	}
+
+.directionNav a.direction.prevNav::before{
+	content: '\e045';
+}
+
+.directionNav a.direction {
+    float: left;
+    display: block;
+    z-index: 10000;
+    right: 10%;
+    position: absolute;
+	
+    font-family: "eleganticons";
+    color: #629329;
+    cursor: pointer;
+}
+
+.directionNav a.direction::before{
+	content: '\e046';	
+	font-size: 4.5em;
+}
+
+.prevNav {
+    left: 0px;
+}
+
+.slidewrap {
+
+    position: relative;
+    width: 100%;
+    margin: 0 0px 0 0px;
+    float: left;
+    height: auto;
+    behavior: url(/css/PIE.htc);
+    }
+   
+   #slider {
+       width: 100%;
+       overflow: hidden;
+       box-sizing: border-box;
+       width: 100%;
+       padding: 0 0px 0 0px;
+       float: left;
+   }
+
+   #slider, .slide {
+    
+  	position: relative;
+       behavior: url(/css/PIE.htc);
+}
+
+
+#slider .slide img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.directionNav {
+    position: absolute;
+    right: 0;
+    bottom: 14%;
+    width: 100%;
+    z-index: 10000;
+}
+
+
+.directionNav a.prevNav {
+
+  
+    left: 10%;
+	right: initial;
+    
+}
+
+.directionNav .jumps{
+	position: relative;
+	text-align: center;
+	float: left;
+	position: absolute;
+	left: 50%;
+    	transform: translateX(-50%);
+    	bottom: 0;
+	}
+
+.directionNav .jumps a{
+	background: #fff;
+	border-radius: 10px;
+	min-width: 35px;
+	min-height: 10px;
+	display: block;
+	float: left;
+	margin: 20px 5px;
+	cursor: pointer;
+	}
+    

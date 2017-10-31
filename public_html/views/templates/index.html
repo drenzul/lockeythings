@@ -1,0 +1,57 @@
+		<div class="slidewrap">
+			<div id="slider">
+				<div class="slide slides" style="height: 310px;">
+					<img src="/images/sc1.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 1;">
+					<img src="/images/ow1.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/sc2.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/ow2.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/sc3.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/ow3.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/sc4.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/sc5.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<img src="/images/sc6.jpg" alt="" width="1280" height="500" class="mySlides" style="opacity: 0;">
+					<div class="directionNav">
+						<a class="prevNav direction" id="prevbutton" onclick="carouselclick(-1)"></a>
+						<a class="nextNav direction" onclick="carouselclick(+1)"></a>
+						<div class="jumps">
+							<a class="jumpNav" onclick="carouselskip(1)" id="jump1" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(2)" id="jump2" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(3)" id="jump3" style="background-color: rgb(255, 255, 255)"></a>
+							<a class="jumpNav" onclick="carouselskip(4)" id="jump1" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(5)" id="jump2" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(6)" id="jump3" style="background-color: rgb(255, 255, 255)"></a>
+							<a class="jumpNav" onclick="carouselskip(7)" id="jump1" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(8)" id="jump2" style="background-color: rgb(255, 255, 255);"></a>
+							<a class="jumpNav" onclick="carouselskip(9)" id="jump3" style="background-color: rgb(255, 255, 255)"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contentwrap">
+			<div class="sectionwrap">
+				<div class="textwrap">
+					<h1>What this site is about</h1>
+					<p>Basically I decided to put this site together as part of my personal learning project to improve my PHP skills, (mainly with the <a href="/show/guncomparison/">Star Citizen Weapon Comparison Tool</a>)</p>
+					<p>The whole site is a hand written custom MVC framework I've put together, while I could have done it much quicker using an existing MVC framework, I decided to build it from scratch in order to improve my understanding of how MVC frameworks operate from the ground up.</p>
+					<p>The comparison page is actually a bit more complex than it might appear as it has to take into account quite a few factors for each stat it is comparing such as</p>
+					<ul>
+						<li>Is a zero stat representing Infinity (for example ammo)</li>
+						<li>How should it represent multiple mounts? For example having a twin mount does double damage, but doesn't double projectile speed, but does kinda double rate of Fire but not really, so they all need representing and comparing differently.</li>
+						<li>Is lower or higher good? Clearly in terms of damage, higher is better, but in terms of power consumption or heat generation, the less per shot is better!</li>
+					</ul>
+					<p>I've also tried to make the functions expandable for the future, for example the function that puts the comparison array together will accept more than two guns in it's input array and can contain more than two in it's output so later on I can make a seperate screen allowing a different type of comparison to be done.</p>
+					<p>You'll have to excuse the graphics as I'm reliant on the free tools at the moment and am not exactly an expert in them, I'm also trying some CSS tricks and working out some CSS bugs to improve my HTML/CSS skills</p>
+					<p>All the animations including the slide-show are done excelusively from css transitions, only the control/timing bits are done in Jquery which just changes classes about</p>
+					<p>The entire site is custom built from hand-coded CMS/HTML/Jquery. No templates or frameworks have been used. The terrible design is entirely my fault :)</p>
+					<p>If you'd like any of bits of code from the site, like the CSS slider, send me an e-mail via the contact page form and I can send you the template I built for it (no cost).</p>
+					<p>Most of this site is based on me and things that I've loved over my 36 (and counting) years going back as far as I remember.</p>
+					<p>Just in case anyone is intrested, I'm currently looking for work (I am currently employed) doing practically anything that is intresting and challenging as I've grown tired of working on CMS/HTML/CSS sites and would like to do something more challenging and rewarding, I'm mainly looking for PHP programming roles in Bournemouth at the moment but would consider anything challenging even if it meant relocating.</p>
+				</div>
+				<div class="imagewrap">
+					<img src="/images/me.jpg" />
+				</div>
+
+			</div>
+		</div>

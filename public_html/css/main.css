@@ -1,0 +1,510 @@
+body{
+	background: #000 url(/images/bg2.png) repeat top left;
+	text-align: center;
+	font-family: Georgia;
+	}
+
+.slider{
+
+-webkit-transform: translateZ(0px);
+}
+
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('/fonts/ElegantIcons.eot');
+	src:url('/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/ElegantIcons.woff') format('woff'),
+		url('/fonts/ElegantIcons.ttf') format('truetype'),
+		url('/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+a, .fakelink{ 
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #FFFF00;
+	}
+
+.fakelink{
+	cursor: default;
+	}
+
+h1, .mainnav, p, h3{
+		color: #629329;
+		clear: both;
+	}
+
+.mainnav{
+	float: left;
+	width: 100%;
+	
+	}
+
+.mainnav ul{
+	list-style-type: none;
+	float: left;
+	clear: both;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	}
+
+.bottomnav{
+	display: flex;
+	float: left;
+	justify-content: space-evenly;
+	width: 100%;
+	}
+
+.navwrap{
+	float: left;
+	flex: 1;
+	order: 1;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	display:flex;
+	}
+
+.navsection{
+	margin: 0 auto;
+	
+	}
+
+.navsection ul, .navsection h3{
+	list-style-type: none;
+	padding-left: 0;
+	text-align: left;
+	}
+
+.navsection ul li{
+	padding-left: 0;
+	}
+
+.mainnav ul li{
+	float: left;
+	display: block;
+	order: 1;
+	flex: 1;
+	text-align: center;
+	position: relative;
+	
+	}
+	
+.mainnav ul li ul{
+	box-sizing: border-box;
+	max-height: 0px;
+	overflow: hidden;
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		height: auto;
+		border-radius: 5px;
+		padding-top: 0px;
+	width: auto;
+	transition: max-height 0.5s linear 0.2s, padding-top 0.2s linear 0s;
+	z-index: 1000;
+	}
+
+.mainnav ul li ul.open{
+	transition: max-height 0.5s linear 0s, padding-top 0.2s linear 0.5s;
+}
+
+header, content, footer{
+	width: 90%;
+	margin: 0 auto;
+	display: inline-block;
+	background-color: #000;
+	text-align: left;
+	padding: 0px;
+	box-sizing: border-box;
+	width: 1280px;
+	max-width: 100%;
+	box-shadow: 0px 0px 20px #aaaaaa;
+}
+
+footer{
+	position: relative;
+	top: -3px;
+	border-top: 1px solid green;
+	}
+
+header{
+	border-bottom: 1px solid green;
+	border-radius: 5px 5px 0 0;
+	}
+
+content{
+	padding-top: 10px;
+	}
+
+footer{
+		border-radius: 0 0 5px 5px;
+}
+
+.contentwrap{
+	display: inline-block;
+	width: 100%;
+	
+	box-sizing: border-box;
+	}
+
+.sectionwrap{
+	float: left;
+	width: 100%;
+	padding: 20px 10px 20px 10px;
+	border-bottom: 3px double #106527;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	}
+
+.logo{
+	box-sizing: border-box;
+	padding: 0 10px;
+	}
+
+.sectionwrap:last-child{
+	border-bottom: 0px solid green;
+}
+
+.sectionwrap:first-child{
+	padding-top: 40px;
+	}
+
+.textwrap{
+	width: 65%;
+	margin-right: 5%;
+	float: left;
+	}
+
+.imagewrap{
+	width: 30%;
+	float: left;
+	}
+
+.sectionwrap h1{
+	margin-top: 0;
+	}
+
+.mainnav ul li:hover ul{
+	padding-top: 10px;
+	max-height: 500px;
+	}
+
+.mainnav ul li ul li{
+	clear: both;
+	white-space: nowrap;
+	padding: 10px 25px 10px 25px;
+	background-color: #222222;
+	width: 100%;
+	text-align: left;
+	max-width: 500%;
+	box-sizing: border-box;
+	z-index: 1001;
+	position: relative;
+	margin-top: -1px;
+	}
+
+.mainnav ul li ul li a{
+	z-index: 1002;
+	position: relative;
+	display: block;
+	
+	-webkit-transform: translateZ(0);
+	}
+
+.mainnav ul li ul li:first-child{
+	border-radius: 10px 10px 0 0;
+	padding-top: 20px;
+	}
+
+.mainnav ul li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 20px;
+	}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #222;
+	position: absolute; 
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 100%;
+}
+
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('/fonts/ElegantIcons.eot');
+	src:url('/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/ElegantIcons.woff') format('woff'),
+		url('/fonts/ElegantIcons.ttf') format('truetype'),
+		url('/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+footer p{
+	font-size: 0.9em;
+	}
+
+.legal{
+	border-top: 1px solid green;
+	padding: 20px 10px 0 10px;
+	}
+
+content ul li{
+	color: #629329;
+	}
+	
+.freecontactformmessage, label, .antispammessage{
+	color: #629329;
+	
+}
+.antispammessage{
+    border-top: 1px solid #629329;
+    border-bottom: 1px solid #629329;
+}
+
+.freecontactform{
+		border: 1px solid #629329;
+}
+
+#leftlistwrap,#rightlistwrap{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+
+}
+
+#leftlistwrap{
+		padding-right: 5px;
+}
+
+#rightlistwrap{
+	padding-left: 5px;
+}
+
+#leftlist,#rightlist,#leftfilters,#rightfilters{
+	float: left;
+	box-sizing: border-box;
+	border: 4px ridge #629329;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+	background-color: #080808;
+	width: 100%;
+}
+
+#leftfilters, #rightfilters{
+	padding: 5px;
+}
+
+.dontsplitme{
+	white-space:nowrap;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+label{
+	padding-right: 10px;
+}
+
+.gunitem{
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+		border-bottom: 1px solid #629329;
+		padding: 5px;
+		color: #629329;
+}
+
+.gunitem p{
+		float: left;
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+
+.comparebutton{
+		background-color: #629329;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px #888888;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+		color: #fff;
+		margin-top: 10px;
+		pointer: cursor;
+}
+
+.comparebutton h3{
+		color: #fff;
+		margin:0;
+		padding: 5px;
+		float: left;
+		cursor: pointer;
+}
+
+
+
+h4{
+	color: #629329;
+}
+
+.gunitem div{
+		float: left;
+}
+
+.gunitem .choices{
+		float: right;
+
+}
+
+.gunitem .choice{
+	float: right;
+	width: 100%;
+}
+
+.choice input{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.choice p{
+		clear: none;
+		margin: 0;
+}
+
+.comp, .compsec{
+		width: 100%;
+		float: left;
+}
+
+.leftsec, .rightsec{
+		width: 30%;
+		float: left;
+		text-align: center;
+}
+
+.midsec{
+		width: 40%;
+		float: left;
+		min-height: 20px;
+		box-sizing: border-box;
+		padding: 0 10px;
+}
+
+.midsecinner{
+	padding-top: 20px;
+	border-bottom: 0px solid yellow;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.midsecinner .marker{
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	
+}
+
+.midsecinner .marker:before{
+	font-family: 'ElegantIcons';
+    content: "\43";
+    color: #fff;
+    font-size: 2em;
+}
+
+.leftbar, .rightbar{
+		float: left;
+		height: 4px;
+		background-color: yellow;
+		box-shadow: 0px 0px 10px #aaaaaa;
+
+		border-radius: 5px 0 0 5px;
+}
+
+.rightbar{
+	background-color: red;
+	border-radius: 0 5px 5px 0;
+}
+
+.statname{
+	text-align: center;
+}
+
+.leftsec h4, .rightsec h4{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.compsec{
+
+	border-radius: 10px;
+		border: 4px ridge #629329;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+	background-color: #080808;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#filters{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#filters h3{
+	text-align: center;
+}
+
+.imagewrap img{
+	width: 100%;
+	height: auto;
+	
+	box-shadow: 0px 0px 15px #bbbbbb;
+	border-radius: 20px;
+	box-sizing: border-box;
+ 	
+	}
