@@ -13,7 +13,7 @@ class Show extends BaseController
     private function Header($action)
     {
         $template= new Template();
-        $template->file = "/home/dyn/www.lockeythings.com/public_html/views/templates/header.html";
+        $template->file = "views/templates/header.html";
         $db = new Database;
         $querystring = "select * from Pages where url = '" . $action . "';";
    //     echo($querystring);
@@ -29,7 +29,7 @@ class Show extends BaseController
     {
 
             $template= new Template();
-            $template->file = "/home/dyn/www.lockeythings.com/public_html/views/templates/" . $action . ".html";
+            $template->file = "views/templates/" . $action . ".html";
          
             $template->display();
          
@@ -39,7 +39,7 @@ class Show extends BaseController
     private function Footer()
     {
         $template= new Template();
-        $template->file = "/home/dyn/www.lockeythings.com/public_html/views/templates/footer.html";
+        $template->file = "views/templates/footer.html";
         $template->display();
     }
     

@@ -26,7 +26,7 @@ class Template
  //               echo("Trying to get: " . $this->file . "\n");
                 $this->$vars['title'] = 'Page not found';
                 $this->$vars['description'] = 'This page was not found!';
-                $output = file_get_contents("/home/dyn/www.lockeythings.com/public_html/views/templates/404.html");
+                $output = file_get_contents("views/templates/404.html");
                 
             }
             
