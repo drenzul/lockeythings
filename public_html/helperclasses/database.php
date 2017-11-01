@@ -15,6 +15,8 @@ class Database
         $databasePassword = 'bobisyouruncle';
         $databasePort = '3306';
         
+        // Not actual details! Placeholders! Leave my DB alone! :)
+        
         self::$connection = mysqli_connect ($serverName, $databaseUser, $databasePassword, 'lockeythings');
         //       mysqli_set_charset('utf-8',self::$connection);
         if (self::$connection)
