@@ -12,6 +12,7 @@ require("helperclasses/MainController.php");
 require("controllers/template.php");
 require("models/static.php");
 require("models/guncomp.php");
+require("models/contact.php");
 require_once("helperclasses/database.php");
 
 $interpreter = new Interpretor($_GET);

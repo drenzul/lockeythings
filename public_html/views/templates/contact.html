@@ -33,7 +33,7 @@
 			<div class="sectionwrap">
 				<div class="textwrap">
 					<h1>Message Me!</h1>
-					<form name="freecontactform" method="post" action="/freecontactformprocess.php" onsubmit="return validate.check(this)">
+					<form name="freecontactform" method="post" action="/contactform/" onsubmit="return validate.check(this)">
 	<table class="freecontactform">
 	<tr>
 	 <td colspan="2">
@@ -74,14 +74,16 @@
 	 </td>
 	</tr>
 	<tr>
+	
 	 <td colspan="2" style="text-align:center" >
 	  <div class="antispammessage">
 	  To help prevent automated spam, please answer this question
 	  <br /><br />
 		  <div class="antispamquestion">
 		   <span class="required_star"> * </span>
-		   Using only numbers, what is 10 plus 15? &nbsp; 
+		   Using only numbers, what is <span class="antispam1"></span> plus <span class="antispam2"></span>? &nbsp; 
 		   <input type="text" name="AntiSpam" id="AntiSpam" maxlength="100" style="width:30px">
+		   <input type="hidden" name="antispam1" /> <input type="hidden" name="antispam2" />
 		  </div>
 	  </div>
 	 </td>
@@ -91,13 +93,8 @@
 	 <br /><br />
 	  <input type="submit" value=" Submit Form " style="width:200px;height:40px">
 	  <br /><br />
-	  <!-- 
-	  If you want to remove this author link, 
-	  please purchase an unbranded version from: http://www.freecontactform.com/unbranded_form.php 
-	  Or upgrade to the professional version at: http://www.freecontactform.com/professional.php
-	  -->
-	  <div class="antispammessage">Form provided by: <a href="http://www.freecontactform.com">FreeContactForm.com</a></div>
-	  <br /><br />
+
+	 <br /><br />
 	 </td>
 	</tr>
 	</table>

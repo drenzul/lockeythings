@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	
+	$val1 = Math.floor((Math.random() * 10 ) + 1);
+	$val2 = Math.floor((Math.random() * 10 ) + 1);
+	
+	$('input[name="antispam1"]').val($val1);
+	$('input[name="antispam2"]').val($val2);
+	$('.antispam1').text($val1);
+	$('.antispam2').text($val2);
+	
 	$(".comparebutton").click(function(){
 		var comp1 = $("input:radio[name = 'left']:checked").val();
 		var	comp2 = $("input:radio[name = 'right']:checked").val();
